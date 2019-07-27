@@ -1134,7 +1134,7 @@ void __init sanity_check_meminfo(void)
 		}
 	}
 
-	high_memory = __va(arm_lowmem_limit - 1) + 1;
+	high_memory = __va(arm_lowmem_limit - 1) + 1;       // xsh_mm
 
 	if (!memblock_limit)
 		memblock_limit = arm_lowmem_limit;
